@@ -4,10 +4,10 @@ import random
 
 app = FastAPI()
 
-
+# Simulate sensor data with random values
 def get_sensor_data():
-    
-    return [random.choice([True, False]) for _ in range(10)]  
+    # Normally this would be obtained from actual sensors
+    return [random.choice([True, False]) for _ in range(10)]  # Simulate 10 parking spots
 
 @app.get("/")
 def read_root():
